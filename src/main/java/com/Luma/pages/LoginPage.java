@@ -19,6 +19,12 @@ public class LoginPage extends BaseClass{
 	private WebElement password;
 	
 	public static void loginPage() {
+		
+		try {
+			input(driver, email, "antartica@gmail.com");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	try {
 		clickOnElement(driver, signinBtn);
 	} catch (Exception e) {

@@ -20,6 +20,16 @@ public class HomePage extends BaseClass{
 	@FindBy(xpath ="//a[@id='ui-id-19']")
 	private WebElement jackets;
 	
+	@FindBy(xpath= "//span[text()='Women']")
+	private WebElement women;
+	
+	@FindBy(xpath= "//a[@id='ui-id-9']")
+	private WebElement womentops;
+	
+	@FindBy(xpath= "//a[@id='ui-id-12']")
+	private WebElement hoodies;
+
+	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

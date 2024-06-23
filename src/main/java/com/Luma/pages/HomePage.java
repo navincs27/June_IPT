@@ -27,9 +27,9 @@ public class HomePage extends BaseClass{
 
 	
 	public void categoryPage() {
-		mouseover(men, driver);
-		mouseover(tops, driver);
-		clickTheElement(jackets, driver);
+		mouseHover(driver,men);
+		mouseHover(driver,tops);
+		clickOnElement(driver,jackets);
 	}
 	
 =======

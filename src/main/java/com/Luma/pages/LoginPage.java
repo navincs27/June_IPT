@@ -15,6 +15,18 @@ public class LoginPage extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 	
+<<<<<<< HEAD
+	
+	@FindBy(id = "send2")
+	private WebElement signIN;
+	
+	public static void Loginpage() {
+		
+		clickOnElement(driver, signIN);
+	}
+	
+	
+=======
 	@FindBy(id = "pass")
 	private WebElement password;
 	
@@ -23,7 +35,7 @@ public class LoginPage extends BaseClass{
 		try {
 			input(driver, email, "antartica@gmail.com");
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	try {
 		clickOnElement(driver, signinBtn);
@@ -38,4 +50,5 @@ public class LoginPage extends BaseClass{
 		e.printStackTrace();
 	}
 	}
+>>>>>>> 4bb0a91de3593269d2754d220737049f59387c4a
 }

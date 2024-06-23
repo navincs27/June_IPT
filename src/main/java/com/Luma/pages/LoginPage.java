@@ -35,7 +35,7 @@ public class LoginPage extends BaseClass{
 		try {
 			input(driver, email, "antartica@gmail.com");
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	try {
 		clickOnElement(driver, signinBtn);

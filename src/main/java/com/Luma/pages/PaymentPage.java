@@ -14,7 +14,7 @@ public class PaymentPage extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 	
-<<<<<<< HEAD
+
 	
 	@FindBy(xpath = "//button[@title='Place Order']")
 	private WebElement placeOrder;
@@ -24,9 +24,20 @@ public void paymentModule() {
 	clickOnElement(driver,placeOrder);
 	System.out.println("*********Order placed successfully***********");
 }
-=======
+
 	@FindBy(id="block-discount-heading")
 	private WebElement apply_Discount;
 
->>>>>>> be4629af47e91b44f482deff32c3e3af3e8ecb27
+@FindBy(xpath="//span[text()='Thank you for your purchase!']")
+private WebElement message;
+
+public void thankyoumessage() {
+	System.out.println(message.getText());
 }
+
+}
+
+
+
+
+

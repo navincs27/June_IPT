@@ -28,7 +28,11 @@ public class HomePage extends BaseClass{
 	
 	@FindBy(xpath= "//a[@id='ui-id-12']")
 	private WebElement hoodies;
+	
+	
 
+	
+	
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;

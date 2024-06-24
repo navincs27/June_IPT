@@ -38,11 +38,27 @@ public class HomePage extends BaseClass{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
 	
 	public void categoryPage() {
-		mouseover(men, driver);
-		mouseover(tops, driver);
-		clickTheElement(jackets, driver);
+		mouseHover(driver,men);
+		mouseHover(driver,tops);
+		clickOnElement(driver,jackets);
 	}
 	
+=======
+
+	@FindBy(xpath = "//span[text()='Gear']")
+	private WebElement gear_Section;
+	
+	@FindBy(xpath = "ui-id-25")
+	private WebElement bag;
+	
+	@FindBy(id = "ui-id-26")
+	private WebElement fitness_Equipment ;
+	
+	@FindBy(id = "ui-id-27")
+	private WebElement watches;
+
+>>>>>>> DeenaDhayalan1125
 }
